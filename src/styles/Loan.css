@@ -1,0 +1,126 @@
+.loan-page {
+  padding: 20px;
+}
+
+.loan-page h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.loan-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.loan-buttons button {
+  padding: 10px 20px;
+  border: 1px solid #999;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.loan-buttons button:hover {
+  background-color: #f0f0f0;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.loan-overview p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.benefits-grid, .eligibility-grid, .features-grid, .notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.benefit-item, .eligibility-item, .feature-item, .note-item {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fafafa;
+  font-size: 16px;
+}
+
+.loan-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.loan-details, .loan-calculator {
+  flex: 1;
+  min-width: 300px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.loan-details h2, .loan-calculator h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.loan-details .loan-image {
+  border: 1px solid #ccc;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.loan-details .loan-info p {
+  margin: 6px 0;
+  padding: 4px;
+  background-color: #ddd;
+  border-radius: 4px;
+  height: 18px;
+  width: 80%;
+}
+
+.loan-calculator .calculator-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.loan-calculator input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.loan-calculator button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.loan-calculator button:hover {
+  background-color: #0056b3;
+}
+
+.loan-result p {
+  margin: 4px 0;
+  font-weight: bold;
+}
