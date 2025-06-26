@@ -1,14 +1,12 @@
-// src/sections/Loan.js
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Loan.css';
-
-const Loan = () => {
+const BusinessLoan = () => {
   return (
-    <div className="loan-page">
-      <h1>LOANS</h1>
-
-      {/* Navigation Buttons */}
+    <div className="loan-detail-page">
+      <h1>Business Loan</h1>
+       {/* Navigation Buttons */}
       <div className="loan-buttons">
         <Link to="/loan/personal"><button>Personal Loan</button></Link>
         <Link to="/loan/home"><button>Home Loan</button></Link>
@@ -106,7 +104,8 @@ const Loan = () => {
         </div>
       </div>
     </div>
+  
   );
 };
 
-export default Loan;
+export default BusinessLoan;
