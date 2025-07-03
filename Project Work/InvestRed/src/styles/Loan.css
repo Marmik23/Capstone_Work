@@ -84,15 +84,17 @@ section h2 {
   border: 1px solid #ccc;
   height: 200px;
   margin-bottom: 10px;
+  background-color: #eaeaea;
 }
 
 .loan-details .loan-info p {
   margin: 6px 0;
-  padding: 4px;
-  background-color: #ddd;
+  padding: 6px 10px;
+  background-color: #f3f3f3;
   border-radius: 4px;
-  height: 18px;
-  width: 80%;
+  font-size: 14px;
+  font-weight: 500;
+  width: fit-content;
 }
 
 .loan-calculator .calculator-box {
@@ -114,13 +116,97 @@ section h2 {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .loan-calculator button:hover {
   background-color: #0056b3;
 }
 
+.loan-result {
+  margin-top: 12px;
+  background-color: #eef5ff;
+  padding: 10px;
+  border-radius: 6px;
+}
+
 .loan-result p {
-  margin: 4px 0;
+  margin: 6px 0;
   font-weight: bold;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Optional: Style for loading or fallback rate */
+.loan-info p:has(span.loading) {
+  color: gray;
+  font-style: italic;
+}
+
+/* ✅ New Styles for Documents/Certificates Table */
+.loan-documents-table {
+  padding: 20px;
+}
+
+.loan-documents-table h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.loan-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.loan-info-table th,
+.loan-info-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.loan-info-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .loan-info-table,
+  .loan-info-table thead,
+  .loan-info-table tbody,
+  .loan-info-table th,
+  .loan-info-table td,
+  .loan-info-table tr {
+    display: block;
+  }
+
+  .loan-info-table thead {
+    display: none;
+  }
+
+  .loan-info-table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .loan-info-table td::before {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .loan-info-table td:nth-of-type(1)::before { content: "Age Group"; }
+  .loan-info-table td:nth-of-type(2)::before { content: "Required Documents"; }
+  .loan-info-table td:nth-of-type(3)::before { content: "Helpful Licenses/Certificates"; }
+  .loan-info-table td:nth-of-type(4)::before { content: "Tips to Lower Interest Rate"; }
 }
