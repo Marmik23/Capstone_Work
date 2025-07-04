@@ -1,59 +1,154 @@
-import React from 'react';
-// import './Home.css';
+import '../styles/index.css';
 
-const Home = () => {
+function Home() {
   return (
-    <div>
-      <div className="section">
-        <h2>Banner Area</h2>
+    <main className="main-content">
+
+      {/* Banner */}
+      <div className="banner">
+        <h2>Welcome to InvestRed</h2>
+        <p>Your trusted partner for Investments, Insurance, Loans, and Financial Planning.</p>
       </div>
 
+      {/* Investments Section */}
       <div className="section">
         <h2>Investments</h2>
-        <p>Explore mutual funds, SIPs, and stocks to grow your wealth over time with our curated investment options.</p>
+        <div className="card-grid">
+          <div className="card">
+            <img src="public" alt="Mutual Funds" />
+            <h3>Mutual Funds</h3>
+            <p>Professionally managed portfolios for long-term wealth building, tailored to your financial goals and risk appetite.</p>
+          </div>
+          <div className="card">
+            <img src="{tfsaIcon}" alt="SIP" />
+            <h3>Systematic Investment Plan</h3>
+            <p>Invest small amounts regularly and build your financial future steadily through disciplined SIP investments.</p>
+          </div>
+          <div className="card">
+            <img src="{tfsaIcon}" alt="GIC" />
+            <h3>Guaranteed Investment Certificates (GIC)</h3>
+            <p>Secure, low-risk investment with guaranteed returns, perfect for conservative investors seeking stability.</p>
+          </div>
+        </div>
       </div>
 
+      {/* Insurance Section */}
       <div className="section">
         <h2>Insurance</h2>
-        <p>Get coverage for life, health, and vehicles with our comprehensive insurance plans.</p>
+        <div className="card-grid">
+          <div className="card">
+            <img src="{tfsaIcon}" alt="Life Insurance" />
+            <h3>Life Insurance</h3>
+            <p>Ensure your family’s financial security with customizable life insurance plans to suit your stage of life.</p>
+          </div>
+          <div className="card">
+            <img src="{tfsaIcon}" alt="Health & Dental Insurance" />
+            <h3>Health & Dental Insurance</h3>
+            <p>Access essential medical care with coverage for hospitalization, surgery, dental, and preventive health services.</p>
+          </div>
+          <div className="card">
+            <img src="{tfsaIcon}" alt="Travel Insurance" />
+            <h3>Travel Insurance</h3>
+            <p>Travel the world worry-free with protection from medical emergencies, lost luggage, and trip cancellations.</p>
+          </div>
+        </div>
       </div>
 
+      {/* Mortgage Section */}
       <div className="section">
         <h2>Mortgage</h2>
-        <p>Find the best home loan options with low interest rates and flexible payment terms.</p>
+        <div className="card-grid">
+          <div className="card">
+            <img src="{tfsaIcon}" alt="Home Loan" />
+            <h3>Home Loan</h3>
+            <p>Flexible home mortgage options at competitive rates to help you finance your dream property.</p>
+          </div>
+          <div className="card">
+            <img src="{tfsaIcon}" alt="Business Loan" />
+            <h3>Business Loan</h3>
+            <p>Customized business financing solutions to fuel your company’s growth and operational needs.</p>
+          </div>
+          <div className="card">
+            <img src="{tfsaIcon}" alt="Personal Loan" />
+            <h3>Personal Loan</h3>
+            <p>Unsecured personal loans for life’s important events—education, travel, or major purchases.</p>
+          </div>
+        </div>
       </div>
 
+      {/* Financial Tools Section */}
       <div className="section">
-        <h2>Financial Tools</h2>
-        <p>Use our calculators and planners to better manage your budgeting, taxes, and savings goals.</p>
+        <h2>Financial Tools & Planning</h2>
+        <div className="card-grid">
+          <div className="card">
+            <img src="{tfsaIcon}" alt="Calculators" />
+            <h3>Contribution Calculators</h3>
+            <p>Estimate your RRSP, TFSA, or RESP contributions and future value with easy-to-use online tools.</p>
+          </div>
+          <div className="card">
+            <img src="{tfsaIcon}" alt="Tax Estimator" />
+            <h3>Tax Estimator</h3>
+            <p>Quickly calculate your potential tax liabilities based on current income and deductions.</p>
+          </div>
+          <div className="card">
+            <img src="{tfsaIcon}" alt="Retirement Planning" />
+            <h3>Retirement Planning</h3>
+            <p>Plan your retirement with confidence — estimate savings, income needs, and expense forecasts.</p>
+          </div>
+        </div>
       </div>
 
-      <div className="section">
-        <h2>Retirement Planning Tool</h2>
-        <p>Plan your retirement with confidence using our CPP, OAS, and RRSP analysis tools.</p>
-      </div>
-
-      <div className="section">
-        <h2>NRI Investments</h2>
-        <p>Specialized investment opportunities tailored for non-resident Indians across the globe.</p>
-      </div>
-
+      {/* Blogs Section */}
       <div className="section">
         <h2>Blogs</h2>
-        <p>Stay updated with financial trends, tips, and guides from our expert-written blog articles.</p>
+        <div className="card-grid">
+          <div className="card">
+            <img src="{tfsaIcon}" alt="Financial News" />
+            <h3>Financial News</h3>
+            <p>Stay updated with the latest market news, trends, and expert opinions from trusted sources.</p>
+          </div>
+          <div className="card">
+            <img src="{tfsaIcon}" alt="Investment Tips" />
+            <h3>Investment Tips</h3>
+            <p>Learn how to diversify your portfolio and manage risk with proven investment strategies.</p>
+          </div>
+          <div className="card">
+            <img src="{tfsaIcon}" alt="Personal Finance Guides" />
+            <h3>Personal Finance Guides</h3>
+            <p>Get practical advice on budgeting, saving, and managing everyday personal finances effectively.</p>
+          </div>
+        </div>
       </div>
 
-      <div className="section">
-        <h2>Startup Investments</h2>
-        <p>Support emerging businesses and diversify your portfolio with startup investment options.</p>
-      </div>
-
-      <div className="section">
-        <h2>Contact</h2>
-        <p>Have questions? Reach out to our support team for help with any of your financial needs.</p>
-      </div>
+{/* Contact Us Section */}
+<div className="section">
+  <h2>Contact Us</h2>
+  <div className="card-grid">
+  <form className="contact-form">
+    <div className="form-group">
+      <label htmlFor="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
     </div>
+    <div className="form-group">
+      <label htmlFor="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+    </div>
+    <div className="form-group">
+      <label htmlFor="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Subject" required />
+    </div>
+    <div className="form-group">
+      <label htmlFor="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+    </div>
+    <button type="submit" className="submit-btn">Send Message</button>
+  </form>
+  </div>
+</div>
+
+
+    </main>
   );
-};
+}
 
 export default Home;

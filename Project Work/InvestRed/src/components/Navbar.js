@@ -32,10 +32,12 @@ function Navbar() {
       </Link>
 
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <span style={navItemStyle}>Investments</span>
+        <Link to="/investments" style={navItemStyle}>Investments</Link>
         <Link to="/loan" style={navItemStyle}>Loans</Link>
         <Link to="/insurance" style={navItemStyle}>Insurance</Link>
         <Link to="/blogs" style={navItemStyle}>Blogs</Link>
+        <Link to="/aboutuS" style={navItemStyle}>About</Link>
+        <Link to="/contactus" style={navItemStyle}>Contact</Link>
         <span style={navItemStyle}>Account</span>
       </div>
     </nav>
