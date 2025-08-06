@@ -1,0 +1,140 @@
+.investment-page {
+    padding: 2rem;
+    font-family: sans-serif;
+  }
+  
+  .investment-overview {
+    margin-bottom: 2rem;
+  }
+  
+  .investment-grid-section {
+    margin-bottom: 2.5rem;
+  }
+  
+  .investment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .investment-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: #222;
+    transition: transform 0.2s ease;
+  }
+  
+  .investment-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .investment-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.8rem;
+  }
+  
+  .investment-card h3 {
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+  }
+  
+  .investment-cta {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #f7f7f7;
+    border-radius: 12px;
+  }
+  
+  .cta-buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .cta-buttons button {
+    padding: 0.6rem 1.2rem;
+    background-color: #f04e23;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  /* Headings & Paragraphs for Internal Pages */
+.investment-page h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #212121;
+  text-align: center;
+}
+
+.investment-page h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: #e64a19;
+}
+
+.investment-page p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1.2rem;
+}
+
+.investment-page ul {
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.investment-page ul li {
+  font-size: 1.05rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Reusable Grids */
+.benefits-grid,
+.eligibility-grid,
+.features-grid,
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Reusable Grid Items */
+.benefit-item,
+.eligibility-item,
+.feature-item,
+.note-item {
+  background: #fff;
+  border-left: 5px solid #f04e23;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+/* Internal Page CTA Section */
+.investment-cta h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  color: #bf360c;
+}
+
+.investment-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.cta-buttons button:hover {
+  background-color: #d84315;
+}

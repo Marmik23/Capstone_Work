@@ -1,0 +1,230 @@
+/* === General Page Styling === */
+.loan-page, .loan-detail-page {
+  padding: 30px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9fc;
+  color: #222;
+}
+
+/* === Headings === */
+.loan-page h1,
+.loan-detail-page h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+section h2 {
+  font-size: 26px;
+  margin-bottom: 16px;
+  color: #2a2a2a;
+}
+
+/* === Navigation Buttons === */
+.loan-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.loan-buttons button {
+  padding: 12px 24px;
+  border: none;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.loan-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* === Card Grids === */
+.benefits-grid, .eligibility-grid, .features-grid, .notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.benefit-item, .eligibility-item, .feature-item, .note-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  text-align: center;
+  font-size: 16px;
+  min-height: 100px;
+}
+
+.benefit-item:hover,
+.eligibility-item:hover,
+.feature-item:hover,
+.note-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* === Loan Section Split === */
+.loan-section {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.loan-details, .loan-calculator {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+}
+
+.loan-details h2, .loan-calculator h2 {
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.loan-details .loan-image {
+  height: 200px;
+  background: #e2e2e2;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* === EMI Calculator Inputs === */
+.loan-calculator .calculator-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.loan-calculator input {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.loan-calculator button {
+  padding: 12px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.loan-calculator button:hover {
+  background: #218838;
+}
+
+.loan-result {
+  margin-top: 14px;
+  background: #e8f5e9;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* === Comparison Table and Additional Info Tables (Card Style) === */
+.comparison-table,
+.loan-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+}
+
+.comparison-table th,
+.comparison-table td,
+.loan-info-table th,
+.loan-info-table td {
+  padding: 16px;
+  border: 1px solid #eee;
+  font-size: 15px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.comparison-table th,
+.loan-info-table th {
+  background-color: #f7f7f7;
+  font-weight: 600;
+  color: #333;
+}
+
+.loan-info-table tr:nth-child(even),
+.comparison-table tr:nth-child(even) {
+  background-color: #fcfcfc;
+}
+
+.loan-info-table td ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+/* === Responsive Tables on Mobile === */
+@media (max-width: 768px) {
+  .loan-section {
+    flex-direction: column;
+  }
+
+  .comparison-table,
+  .loan-info-table,
+  .comparison-table thead,
+  .loan-info-table thead,
+  .comparison-table tbody,
+  .loan-info-table tbody,
+  .comparison-table th,
+  .loan-info-table th,
+  .comparison-table td,
+  .loan-info-table td,
+  .comparison-table tr,
+  .loan-info-table tr {
+    display: block;
+  }
+
+  .comparison-table thead,
+  .loan-info-table thead {
+    display: none;
+  }
+
+  .comparison-table td,
+  .loan-info-table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .comparison-table td::before,
+  .loan-info-table td::before {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}
